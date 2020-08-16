@@ -1,0 +1,8 @@
+FROM alwaysai/edgeiq:nano-latest
+WORKDIR /usr/src
+
+RUN apt update && apt install usbutils nano
+
+
+COPY . .
+CMD [ "python3", "app.py" ]
