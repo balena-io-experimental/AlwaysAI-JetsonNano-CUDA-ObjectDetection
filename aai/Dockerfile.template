@@ -1,4 +1,4 @@
-FROM alwaysai/edgeiq:nano-latest
+FROM alwaysai/edgeiq:nano-0.15.1
 WORKDIR /usr/src
 
 RUN apt update && apt install usbutils nano

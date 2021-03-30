@@ -17,7 +17,7 @@ To install app dependencies in the runtime container, list them in the requireme
 def main():
     obj_detect = edgeiq.ObjectDetection(
             "alwaysai/mobilenet_ssd")
-    obj_detect.load(engine=edgeiq.Engine.DNN_CUDA)
+    obj_detect.load(engine=edgeiq.Engine.DNN)
 
     print("Loaded model:\n{}\n".format(obj_detect.model_id))
     print("Engine: {}".format(obj_detect.engine))
